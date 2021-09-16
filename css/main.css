@@ -2,11 +2,32 @@
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas:"apple beats amazon adidas"
+    grid-template-areas:"nav nav nav nav"
+    "apple beats amazon adidas"
     "music headphones shop shoes"
 }
 
+.nav{
+    grid-area:nav;
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas:"logo . links search"
+}
 
+.logo{
+    grid-area: logo;
+}
+
+
+.links{
+    grid-area:links;
+}
+
+
+.search{
+    grid-area: search;
+}
 
 .adidas{
     grid-area:adidas;
@@ -56,3 +77,5 @@ img {
     height: auto;
     width:100%
 }
+
+.nav > img
